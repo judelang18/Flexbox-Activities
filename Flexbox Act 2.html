@@ -75,16 +75,20 @@
     }
 
 
-    .middleboxes1 {
+    .kulong{
         display: flex;
+        flex-grow: ;
     }
 
     .middlefirst {
         display: flex;
         flex-direction: row;
         flex-grow: 1;
+        flex-wrap: wrap;
+        width: 50%;
         border: 1px solid black;
-        align-items: center;
+        align-items: end;
+
 
 
     }
@@ -105,15 +109,12 @@
 
     }
 
-    .middleboxes2 {
-        display: flex;
-    }
 
     .middlesecond {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        flex-grow: 1;
+        width: 50%;
         gap: 4px;
         padding: 4px;
         border: 1px solid black;
@@ -195,14 +196,16 @@
 
     <div class="middle">
         <main>
-            <div class="middlefirst">
-                <div class="middleboxes1">
-                    <div class="middlefirstboxes1"></div>
-                    <div class="middlefirstboxes1"></div>
-                </div>
-                <div class="middleboxes2">
-                    <div class="middlefirstboxes2"></div>
-                    <div class="middlefirstboxes2"></div>
+            <div class="kulong">
+                <div class="middlefirst">
+                    <div class="middleboxes1">
+                        <div class="middlefirstboxes1"></div>
+                        <div class="middlefirstboxes1"></div>
+                    </div>
+                    <div class="middleboxes2">
+                        <div class="middlefirstboxes2"></div>
+                        <div class="middlefirstboxes2"></div>
+                    </div>
                 </div>
             </div>
 
