@@ -1,0 +1,183 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 3</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+        height: calc(100vh - 8px);
+        gap: 4px;
+    }
+
+    nav,
+    aside,
+    main,
+    footer {
+        padding: 4px;
+        border: 1px solid black;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 2px;
+    }
+
+    .navleft {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .navbox {
+        background-color: red;
+        height: 40px;
+        width: 40px;
+    }
+
+    .navright {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+
+    }
+
+    .navboxes {
+        background-color: red;
+        height: 30px;
+        width: 50px;
+    }
+
+    .middle {
+        display: flex;
+        flex-grow: 1;
+        gap: 4px;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 4px;
+    }
+
+    .asideboxes {
+        border: 1px solid black;
+        height: 30px;
+        width: 14vw;
+    }
+
+    main {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .aside3box {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 2px;
+    }
+
+    .asideboxers{
+        border: 1px solid black;
+        width: 14vw;
+        height: 27.4vh;
+
+    }
+
+    .footerc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+
+
+    }
+    .footercubes {
+        background-color: red;
+        height: 20px;
+        width: 20px;
+    }
+
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6px;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <div class="navleft">
+            <div class="navbox"></div>
+            <div class="navflexword">Flexbox</div>
+        </div>
+
+        <div class="navright">
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+        </div>
+    </nav>
+
+    <div class="middle">
+
+        <aside>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+        </aside>
+
+        <main>
+            M
+        </main>
+
+        <div class="">
+            <div class="aside3box">
+                <div class="asideboxers"></div>
+                <div class="asideboxers"></div>
+                <div class="asideboxers"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerc">
+            <div class="footercubes"></div>
+            <div class="footercubes"></div>
+            <div class="footercubes"></div>
+            <div class="footercubes"></div>
+            <div class="footercubes"></div> 
+        </div>
+        <div>
+            <div class="copyright">©Copyright Flexbox</div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
