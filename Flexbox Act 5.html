@@ -1,10 +1,222 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox 5</title>
 </head>
-<body>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 4px;
+        height: calc(100vh - 8px);
+
+    }
+
+    nav,
+    main,
+    aside,
+    footer {
+        border: 1px solid black;
+        padding: 4px;
+    }
+
+    .navupper {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        justify-content: center;
+    }
+
+    .navbox {
+        background-color: red;
+        height: 35px;
+        width: 35px;
+    }
+
+    .navlower {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        margin: 2px;
+        padding: 2px;
+
+
+    }
+
+    .navboxes {
+        background-color: red;
+        height: 25px;
+        width: 50px;
+    }
+
+    .middle {
+        display: flex;
+        flex-grow: 1;
+        gap: 4px;
+    }
+
+    main {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .maincontainer {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        align-self: center;
+        justify-content: space-around;
+        gap: 4px;
+        border: 1px solid black;
+
+    }
+
+    .mainleft {
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+        border: 1px solid black;
+
+    }
+
+    .mainleftboxes {
+        border: 1px solid black;
+        height: 80px;
+        width: 80px;
+    }
+
+    .mainright {
+        border: 1px solid black;
+        height: 40vh;
+        width: 20vw;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+
+    .asideboxes {
+        border: 1px solid black;
+        height: 4vh;
+        width: 15vw;
+    }
+
     
+    .firstbot{
+        display: flex;
+    }
+    
+    .footercube{
+        background-color: red;
+        height: 40px;
+        width: 40px;
+    }
+
+    .footerbox{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .boxes{
+        background-color: red;
+        height: 20px;
+        width: 20px;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <div class="navupper">
+            <div class="navbox"></div>
+            <div>Flexbox</div>
+        </div>
+
+        <div class="navlower">
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+        </div>
+    </nav>
+
+    <div class="middle">
+        <main>
+            <div class="maincontainer">
+                <div class="mainleft">
+                    <div class="mainleftboxes"></div>
+                    <div class="mainleftboxes"></div>
+                    <div class="mainleftboxes"></div>
+                    <div class="mainleftboxes"></div>
+                    <div class="mainleftboxes"></div>
+                    <div class="mainleftboxes"></div>
+                    <div class="mainleftboxes"></div>
+                    <div class="mainleftboxes"></div>
+                    <div class="mainleftboxes"></div>
+                    <div class="mainleftboxes"></div>
+                </div>
+                <div class="mainright">
+
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="bottom">
+            <div class="firstbot">
+                <div class="footercube"></div>
+                
+                <div class="parenttext">
+                    <div>Flexbox</div>
+                    <div>©Copyrights All rights reserved.</div>
+                </div>
+
+                <div class="footerbox">
+                    <div class="boxes"></div>
+                    <div class="boxes"></div>
+                    <div class="boxes"></div>
+                    <div class="boxes"></div>
+                    <div class="boxes"></div>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
