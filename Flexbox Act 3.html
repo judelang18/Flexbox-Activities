@@ -23,7 +23,8 @@
     nav,
     aside,
     main,
-    footer {
+    footer,
+    .asideright {
         padding: 4px;
         border: 1px solid black;
     }
@@ -68,7 +69,6 @@
     aside {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
         gap: 4px;
     }
 
@@ -81,23 +81,41 @@
     main {
         display: flex;
         flex-grow: 1;
+
+        gap: 4px;
     }
 
-    .aside3box {
+    .main1 {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        padding: 4px;
+        gap: 2px;
+        align-self: center;
+    }
+
+    .mid6 {
+        border: 1px solid black;
+        height: 24vh;
+        width: 8vw;
+
+    }
+
+    .asideright {
         display: flex;
         flex-direction: column;
-        flex-grow: 1;
         gap: 2px;
     }
 
-    .asideboxers{
+    .asideboxers {
+        display: flex;
         border: 1px solid black;
         width: 14vw;
-        height: 27.4vh;
+        flex-grow: 1;
 
     }
 
-    .footerc{
+    .footerc {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -105,13 +123,14 @@
 
 
     }
+
     .footercubes {
         background-color: red;
         height: 20px;
         width: 20px;
     }
 
-    .copyright{
+    .copyright {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -151,15 +170,20 @@
         </aside>
 
         <main>
-            M
+            <div class="main1">
+                <div class="mid6"></div>
+                <div class="mid6"></div>
+                <div class="mid6"></div>
+                <div class="mid6"></div>
+                <div class="mid6"></div>
+                <div class="mid6"></div>
+            </div>
         </main>
 
-        <div class="">
-            <div class="aside3box">
-                <div class="asideboxers"></div>
-                <div class="asideboxers"></div>
-                <div class="asideboxers"></div>
-            </div>
+        <div class="asideright">
+            <div class="asideboxers"></div>
+            <div class="asideboxers"></div>
+            <div class="asideboxers"></div>
         </div>
     </div>
 
@@ -169,7 +193,7 @@
             <div class="footercubes"></div>
             <div class="footercubes"></div>
             <div class="footercubes"></div>
-            <div class="footercubes"></div> 
+            <div class="footercubes"></div>
         </div>
         <div>
             <div class="copyright">©Copyright Flexbox</div>
