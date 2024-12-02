@@ -68,37 +68,6 @@
         flex-grow: 1;
     }
 
-    .maincontainer {
-        display: flex;
-        flex-direction: row;
-        flex-grow: 1;
-        align-self: center;
-        justify-content: space-around;
-        gap: 4px;
-        border: 1px solid black;
-
-    }
-
-    .mainleft {
-        display: flex;
-        gap: 4px;
-        flex-wrap: wrap;
-        border: 1px solid black;
-
-    }
-
-    .mainleftboxes {
-        border: 1px solid black;
-        height: 80px;
-        width: 80px;
-    }
-
-    .mainright {
-        border: 1px solid black;
-        height: 40vh;
-        width: 20vw;
-    }
-
     aside {
         display: flex;
         flex-direction: column;
@@ -112,22 +81,29 @@
         width: 15vw;
     }
 
-    
-    .firstbot{
+    .footermain {
         display: flex;
+        justify-content: space-between;
+        gap: 2px;
+        align-items: center;
     }
-    
-    .footercube{
+
+    .rightfooter {
+        display: flex;
+        gap: 4px;
+    }
+
+    .footercube {
         background-color: red;
         height: 40px;
         width: 40px;
     }
 
-    .footerbox{
+    .leftfooter{
         display: flex;
-        justify-content: right;
-        align-items: center;
-        gap: 2px;
+        gap: 4px;
+        
+        
     }
 
     .boxes{
@@ -135,6 +111,7 @@
         height: 20px;
         width: 20px;
     }
+
 </style>
 
 <body>
@@ -159,23 +136,7 @@
 
     <div class="middle">
         <main>
-            <div class="maincontainer">
-                <div class="mainleft">
-                    <div class="mainleftboxes"></div>
-                    <div class="mainleftboxes"></div>
-                    <div class="mainleftboxes"></div>
-                    <div class="mainleftboxes"></div>
-                    <div class="mainleftboxes"></div>
-                    <div class="mainleftboxes"></div>
-                    <div class="mainleftboxes"></div>
-                    <div class="mainleftboxes"></div>
-                    <div class="mainleftboxes"></div>
-                    <div class="mainleftboxes"></div>
-                </div>
-                <div class="mainright">
-
-                </div>
-            </div>
+            F
         </main>
 
         <aside>
@@ -193,28 +154,24 @@
     </div>
 
     <footer>
-        <div class="bottom">
-            <div class="firstbot">
+        <div class="footermain">
+            <div class="rightfooter">
                 <div class="footercube"></div>
-                
-                <div class="parenttext">
+               
+                <div class="down">
                     <div>Flexbox</div>
-                    <div>©Copyrights All rights reserved.</div>
-                </div>
-
-                <div class="footerbox">
-                    <div class="boxes"></div>
-                    <div class="boxes"></div>
-                    <div class="boxes"></div>
-                    <div class="boxes"></div>
-                    <div class="boxes"></div>
+                    <div>©Copyrights All rights reserved</div>
                 </div>
             </div>
-
-
             
+            <div class="leftfooter">
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+            </div>
         </div>
-
     </footer>
 
 </body>
