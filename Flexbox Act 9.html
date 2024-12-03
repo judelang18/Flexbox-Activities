@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            height: calc(100vh - 8px);
+            padding: 4px;
+        }
+
+        nav,
+        main,
+        aside,
+        footer {
+            border: 1px solid black;
+            padding: 4px;
+        }
+
+        .container {
+            display: flex;
+            gap: 5px;
+            flex-grow: 1;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        aside {
+            width: 25vw;
+        }
+
+        nav {
+            display: flex;
+            gap: 5px;
+        }
+
+
+        main {
+            display: flex;
+            gap: 5px;
+        }
+
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        N
+    </nav>
+    <div class="container">
+        <main>
+            M
+        </main>
+        <aside>
+            A
+        </aside>
+    </div>
+    <footer>
+        F
+    </footer>
+</body>
+
+</html>
