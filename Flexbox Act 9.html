@@ -3,86 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            height: calc(100vh - 8px);
-            padding: 4px;
-        }
-
-        nav,
-        main,
-        aside,
-        footer {
-            border: 1px solid black;
-            padding: 4px;
-        }
-
-        .container {
-            display: flex;
-            gap: 5px;
-            flex-grow: 1;
-        }
-
-        main {
-            flex-grow: 1;
-        }
-
-        aside {
-            width: 25vw;
-        }
-
-        nav {
-            display: flex;
-            gap: 5px;
-        }
-
-
-        main {
-            display: flex;
-            gap: 5px;
-        }
-
-
-        aside {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        footer {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            align-items: center;
-        }
-    </style>
+    <title>Flexbox 9</title>
 </head>
 
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 4px;
+        height: calc(100vh - 8px);
+    }
+
+    nav,
+    main,
+    aside,
+    footer {
+        border: 1px solid black;
+        padding: 4px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .l {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .navbox {
+        background-color: red;
+        height: 40px;
+        width: 40px;
+    }
+
+    .r {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .navboxes {
+        background-color: red;
+        height: 30px;
+        width: 50px;
+    }
+
+    .allcontainer {
+        display: flex;
+        flex-grow: 1;
+        gap: 4px;
+
+
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+    }
+
+    .asideboxes {
+        border: 1px solid black;
+        height: 30px;
+        width: 20vw;
+    }
+
+    .twokulukoy{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 4px;
+    }
+
+    main{
+        dis
+    }
+</style>
+
 <body>
+
     <nav>
-        N
+        <div class="l">
+            <div class="navbox"></div>
+            <div>Flexbox</div>
+        </div>
+
+        <div class="r">
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+        </div>
     </nav>
-    <div class="container">
-        <main>
-            M
-        </main>
+
+    <div class="allcontainer">
+
         <aside>
-            A
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
         </aside>
+
+        <div class="mf">
+            <div class="inmf">
+
+                <div class="twokulukoy">
+                    <main>
+                        M
+                    </main>
+                    <footer>
+                        F
+                    </footer>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer>
-        F
-    </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
 </body>
 
 </html>
