@@ -88,8 +88,58 @@
 
     main {
         display: flex;
-        flex-direction: row;
         flex-grow: 1;
+
+    }
+
+    .mainboxes {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .mupper {
+
+        border: 1px solid black;
+        height: 20vh;
+        width: 60vw;
+    }
+
+    .mlower {
+        border: 1px solid black;
+        height: 20vh;
+        width: 60vw;
+    }
+
+    .footermain {
+        display: flex;
+        justify-content: space-between;
+        gap: 2px;
+        align-items: center;
+    }
+
+    .rightfooter {
+        display: flex;
+        gap: 4px;
+    }
+
+    .footercube {
+        background-color: red;
+        height: 40px;
+        width: 40px;
+    }
+
+    .leftfooter{
+        display: flex;
+        gap: 4px;
+        
+    }
+    .boxes{
+        background-color: red;
+        height: 20px;
+        width: 20px;
     }
 </style>
 
@@ -127,12 +177,35 @@
         <div class="twokulukoy">
 
             <main>
-                <div class="mupper"></div>
-                <div class="mlower"></div>
+                <div class="mainboxes">
+                    <div>
+                        <div class="mupper"></div>
+                    </div>
+                    <div>
+                        <div class="mlower"></div>
+                    </div>
+                </div>
             </main>
 
             <footer>
-                F
+                <div class="footermain">
+                    <div class="rightfooter">
+                        <div class="footercube"></div>
+
+                        <div class="down">
+                            <div>Flexbox</div>
+                            <div>©Copyrights All rights reserved</div>
+                        </div>
+                    </div>
+
+                    <div class="leftfooter">
+                        <div class="boxes"></div>
+                        <div class="boxes"></div>
+                        <div class="boxes"></div>
+                        <div class="boxes"></div>
+                        <div class="boxes"></div>
+                    </div>
+                </div>
             </footer>
 
         </div>
