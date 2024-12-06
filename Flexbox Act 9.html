@@ -79,15 +79,17 @@
         width: 20vw;
     }
 
-    .twokulukoy{
+    .twokulukoy {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
         gap: 4px;
     }
 
-    main{
-      
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
     }
 </style>
 
@@ -122,18 +124,17 @@
             <div class="asideboxes"></div>
         </aside>
 
-        <div class="mf">
-            <div class="inmf">
+        <div class="twokulukoy">
 
-                <div class="twokulukoy">
-                    <main>
-                        M
-                    </main>
-                    <footer>
-                        F
-                    </footer>
-                </div>
-            </div>
+            <main>
+                <div class="mupper"></div>
+                <div class="mlower"></div>
+            </main>
+
+            <footer>
+                F
+            </footer>
+
         </div>
     </div>
 
